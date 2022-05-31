@@ -254,23 +254,36 @@
         
         footer {
             display: flex;
-            flex-flow: row nowrap;
             justify-content: space-between;
-            align-items: center;
-            padding: calc(var(--text-spacing)*0.5);
-            background-color: var(--second-background-color);
+            align-items: flex-end;
+            margin: 0 0.6875rem;
+            padding-top: 2.5rem;
         }
         
         footer p {
-            font-size: medium;
-            color: var(--second-font-color);
+            font-size: 4vw;
+            margin-bottom: 0;
         }
         
         .logo-f img {
-            width: 3vw;
+            width: 13vw;
         }
         
         @media screen and (min-width: 768px) {
+            footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin: 0 0.6875rem;
+                    padding-top: 2.5rem;
+            }
+            footer p {
+                font-size: 1.2vw;
+                margin-bottom: 0;
+            }
+            .logo-f img {
+                width: 3vw;
+            }
             .container {
                 max-width: 100%;
                 width: 100%;
@@ -298,36 +311,22 @@
                 height: 101vw;
                 padding: var(--imagery-spacing);
             }
-            @media screen and (min-width: 768px) {
-                .container {
-                    max-width: 100%;
-                    width: 100%;
-                    margin: 0;
-                }
-                .nav-container .hamburger-lines {
-                    display: none;
-                }
-                .navbar .menu-items {
-                    padding-top: 0;
-                    height: 3.75rem;
-                    width: 100%;
-                    transform: none;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    margin: 0;
-                    padding: 0;
-                    text-align: center;
-                }
-                h2 {
-                    font-size: xx-large;
-                }
-                main>section:nth-of-type(2) {
-                    height: 101vw;
-                    padding: var(--imagery-spacing);
-                }
-            }
+        }
             @media screen and (min-width: 1024px) {
+                footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin: 0 0.6875rem;
+                    padding-top: 2.5rem;
+                }
+                footer p {
+                    font-size: 1.2vw;
+                    margin-bottom: 0;
+                }
+                .logo-f img {
+                    width: 3vw;
+                }
                 .container {
                     max-width: 100%;
                     width: 100%;
@@ -352,3 +351,4 @@
                     height: 81vw;
                     padding: var(--imagery-spacing);
                 }
+            }
